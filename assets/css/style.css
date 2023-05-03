@@ -132,3 +132,13 @@ ul li a:hover{
   color: #fff;
   transition: 0s;
 }
+
+/* ========== LANDING TEXT ========== */
+.landing__text{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  color: #fff;
+}
+
