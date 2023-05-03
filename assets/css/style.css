@@ -16,7 +16,8 @@
   
   body {
     min-height: 100vh;
-    background: linear-gradient(30deg, #3ba7e6, #3b098c);;
+    /* background: linear-gradient(30deg, #3ba7e6, #3b098c); */
+    background: #3b098c;
   }
 
   
@@ -134,13 +135,13 @@ ul li a:hover{
 }
 
 /* ========== LANDING TEXT ========== */
-.landing__text{
+.landing__text1{
   color: white;
   position: absolute;
   top: 20%;
 }
 
-.landing__text h3{
+.landing__text1 h3{
   font-size: 50px;
   font-weight: 600;
   margin-left: 80px;
@@ -148,13 +149,13 @@ ul li a:hover{
   color: white;
 }
 
-.landing__text h1{
+.landing__text1 h1{
   font-size: 70px;
   line-height: 90px;
   margin-left: 110px;
   margin-top: 10px;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
+  /* color: transparent; */
+  /* -webkit-text-stroke: 1px white; */
 }
 
 .cursor{
@@ -169,7 +170,7 @@ ul li a:hover{
   mix-blend-mode: difference;
 }
 
-.landing__text:hover ~ .cursor{
+.hovbig__text:hover ~ .cursor{
   transform: scale(7);
 }
 
