@@ -10,73 +10,39 @@
         <!--=============== REMIXICONS ===============-->
         <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
         
-        <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
 
         <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
         <title>Soumya's Portfolio Website</title>
     </head>
     <body>
         <!--==================== HEADER ====================-->
-        <header class="header" id="header">
-            <nav class="nav container">
-                <a href="#" class="nav__logo">
-                    Soumya
-                </a>
-
-                <div class="nav__menu" id="nav-menu">
-                    <ul class="nav__list grid">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link">
-                                <i class="ri-home-smile-line"></i> Home
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#skills" class="nav__link">
-                                <i class="ri-stack-line"></i> Skills
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#education" class="nav__link">
-                                <i class="ri-book-open-line"></i> Education
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#experience" class="nav__link">
-                                <i class="ri-briefcase-5-line"></i> Experience
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">
-                                <i class="ri-stack-line"></i> Projects
-                            </a>
-                        </li>
-                        <li class="nav__item">
-                            <a href="#contact" class="nav__link">
-                                <i class="ri-mail-send-line"></i> Contact
-                            </a>
-                        </li>
-                    </ul>
-
-                    <!-- Close button -->
-                    <div class="nav__close" id="nav-close">
-                        <i class="ri-close-line"></i>
-                    </div>
-                </div>
-                <div class="nav__buttons">
-                    <!-- Theme change button -->
-                    <!-- Toggle button -->
-                    <div class="nav__toggle" id="nav-toggle">
-                        <i class="ri-menu-line"></i>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-
         
+        <div class="navigation">
+            <div class="toggle">
+                <span>
+    
+                </span>
+            </div>
+            <ul>
+                <li style="--i:0;"><a href="#">Home</a></li>
+                <li style="--i:1;"><a href="#">About</a></li>
+                <li style="--i:2;"><a href="#">Projects</a></li>
+                <li style="--i:3;"><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+
+        <script>
+            let navigation = document.querySelector('.navigation')
+            document.querySelector('.toggle').onclick = function
+            (){
+                this.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }
+        </script>
+
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>
     </body>
