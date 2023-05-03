@@ -28,3 +28,19 @@ const linkAction = () =>{
     navMenu.classList.remove('show-menu')
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
+
+//  ======= LANDING TEXT HOVER ======= 
+
+ const cursor = document.querySelector('.cursor');
+document.addEventListener('mousemove',(e)=>{
+    cursor.style.left = e.clientX + 'px';
+    cursor.style.top = e.clientY + 'px';
+})
+
+// ========== NAV ==============
+let navigation = document.querySelector('.navigation')
+            document.querySelector('.toggle').onclick = function
+            (){
+                this.classList.toggle('active')
+                navigation.classList.toggle('active')
+            }

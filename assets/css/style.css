@@ -7,7 +7,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: 'Lora';
+    font-family: 'poppins', sans-serif;
   }
   
   html {
@@ -135,10 +135,42 @@ ul li a:hover{
 
 /* ========== LANDING TEXT ========== */
 .landing__text{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50vh;
-  color: #fff;
+  color: white;
+  position: absolute;
+  top: 20%;
 }
+
+.landing__text h3{
+  font-size: 50px;
+  font-weight: 600;
+  margin-left: 80px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.landing__text h1{
+  font-size: 70px;
+  line-height: 90px;
+  margin-left: 110px;
+  margin-top: 10px;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+
+.cursor{
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: white;
+  transition: 0.1s;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}
+
+.landing__text:hover ~ .cursor{
+  transform: scale(7);
+}
+
 
